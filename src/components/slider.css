@@ -1,0 +1,43 @@
+.slider {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    opacity: 0;
+    transform: scale(85%);
+    transition: 2s;
+}
+
+.sliderZoom {
+    opacity: 1;
+    transform: scale(100%);
+    transition: 2s;
+}
+
+.sliderText {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px
+    
+}
+
+.sliderImage {
+    width: 60%
+}
+
+.sliderTitle {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .sliderImage {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+    }
+}

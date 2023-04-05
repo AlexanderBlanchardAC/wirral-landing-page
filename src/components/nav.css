@@ -1,0 +1,109 @@
+.nav {
+    position: sticky;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    opacity: 0.75;
+    margin-bottom: -70px;
+    padding: 0px 30px;
+    z-index: 999;
+    top: 0px;
+}
+
+.navLogo {
+    font-family: "MonteCarlo", cursive;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 10px;
+    border-bottom: 1px solid  transparent;
+    margin: 0px 5px;
+    transition: 250ms;
+}
+
+.navListLink {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.navListLink:hover {
+    font-weight: bold;
+}
+
+.navLink:hover {
+    border-bottom-color: white;
+    transition: 250ms;
+}
+
+.navItem {
+    white-space: nowrap;
+}
+
+.navMenu {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+    .navList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .navList--active {
+        left: 0;
+    }
+
+    .navMenu {
+        display: block;
+    }
+
+    .navListItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex: 1;
+        border-radius: 0;
+    }
+
+    .navListLink {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        border-width: 0px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        opacity: 075;
+    }
+
+    .navListLink:hover {
+        opacity: 0.9;
+        border-width: 0px;
+    }
+}
