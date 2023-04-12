@@ -1,8 +1,6 @@
 import './App.css';
 import hoylake from "./assets/hoylake.jpg";
 import oxton from "./assets/oxton.jpg";
-import westkirby from "./assets/westkirby.jpg";
-import wirralsunset from "./assets/wirralsunset.jpg";
 import wirralwater from "./assets/wirralwater.jpeg";
 import Picture from "./components/Picture";
 import Slider from "./components/Slider";
