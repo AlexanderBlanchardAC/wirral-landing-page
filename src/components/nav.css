@@ -99,7 +99,7 @@
         align-items: center;
         justify-content: center;
         background-color: black;
-        opacity: 075;
+        opacity: 0.75;
     }
 
     .navListLink:hover {
